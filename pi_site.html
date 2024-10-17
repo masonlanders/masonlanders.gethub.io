@@ -1,0 +1,122 @@
+<html lang="en-us"><head>
+<meta charset="utf-8">
+<title>PiHole DNS Filter</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<link rel="stylesheet" href="C:\Users\Mason\OneDrive\Documents\Website\CSS\1css.css">
+<link rel="stylesheet" href="C:\Users\Mason\OneDrive\Documents\Website\CSS\2css.css">
+<link rel="stylesheet" href="C:\Users\Mason\OneDrive\Documents\Website\CSS\3css.css" media="screen">
+<link rel="icon" href="C:\Users\Mason\OneDrive\Documents\Website\LD.png" type="image/x-icon">
+</head><body data-new-gr-c-s-check-loaded="14.1189.0" data-gr-ext-installed="">
+<div class="preloader" style="display: none;">
+</div>
+<div id="particles-js"><canvas class="particles-js-canvas-el" width="1146" height="1270" style="width: 100%; height: 100%;"></canvas></div>
+<header class="sticky-top bg-black">
+<div class="container">
+<nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+
+<div class="collapse navbar-collapse text-center" id="navigation">
+<ul class="navbar-nav mx-auto">
+<li class="nav-item"><a class="nav-link" href="file:///C:/Users/Mason/OneDrive/Documents/Website/site.html">Back to main</a></li>
+</div>
+</nav>
+</div>
+</header>
+<section class="section">
+<div class="container text-left text-sm-center">
+<h2>PiHole DNS Filter</h2>
+</div>
+</section>
+<section class="section pt-0">
+    <div class="container">
+        <div class="row">
+            <article class="col-lg-8 col-md-10 mx-auto" data-file="C:\Users\Mason\OneDrive\Documents\Website\Pi-hole.png" data-target="article">
+                <div class="text-center">
+                    <!-- Image -->
+                    <img src="C:\Users\Mason\OneDrive\Documents\Website\Pi-hole.png" alt="PiHole Image" class="img-fluid mb-4">
+                </div>
+
+                <!-- Content aligned below the image -->
+                <div class="content mt-4">
+                <h3>Pi-Hole</h3>
+                    <h5><strong>Install Raspberry Pi Imager:</strong></h5>
+                        <li>Download the Pi Imager from <a href="https://pi-hole.net/">pi-hole.net</a>.</li>
+                        <li>Use it to install the Raspberry Pi OS Lite onto the memory card.</li>
+                        <li>During setup, configure a username, password, Wi-Fi settings, and keyboard layout.</li>
+                        <br>
+                        <br>
+                        <h5><strong>Connect to the Pi via SSH:</strong></h5>
+                
+                        <li>Insert the memory card into the Pi and power it on.</li>
+                        <li>Find the Pi’s IP address from your router's DHCP list.</li>
+                        <li>SSH into the Pi:</li>
+                        <pre><i>ssh &lt;username&gt;@&lt;Pi_IP_address&gt; -p 22</i></pre>
+                        <li>Ensure ACLs on your router don't block port 22.</li>
+                        <br>
+                        <br>
+                        <h5><strong>Update the Pi:</strong></h5>
+                    <pre><i>sudo apt update && sudo apt upgrade -y</i></pre>
+                    <br>
+                    <br>
+                    <h5><strong>Install Pi-hole:</strong></h5>
+                    <pre><i>wget -O basic-install.sh https://install.pi-hole.net && sudo bash basic-install.sh</i></pre>
+                    <br>
+                    <br>
+                    <h5><strong>Configure Pi-hole DNS:</strong></h5>
+
+                        <li>Select DNS servers (e.g., Quad9: 9.9.9.9 or Cloudflare: 1.1.1.1).</li>
+                    
+                        <br>
+                        <br>
+                        <h5><strong>Set Pi-hole as Your Network's DNS Server:</strong></h5>
+                    
+                        <li>Assign your Pi’s IP address in your router's DHCP settings.</li>
+                        <br>
+                        <br>
+                        <br>
+                        <p>(Note: I had to create firewall rules and traffic rules within my Unifi network. I redirected all traffic for TCP/UDP to port 53 on all VLANs to the main subnet to the static IP of the Pi-Hole.)</p>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+<div>
+</div>
+<div>
+</div>
+<section class="section pt-0">
+    <div class="container">
+        <div class="row">
+            <article class="col-lg-8 col-md-10 mx-auto" data-file="C:\Users\Mason\OneDrive\Documents\Website\UDR_Case.png" data-target="article">
+                <div class="text-center">
+                    <!-- Image -->
+                    <img src="C:\Users\Mason\OneDrive\Documents\Website\UDR_Case.png" alt="UDR_Case" class="img-fluid mb-4">
+                </div>
+
+                <!-- Content aligned below the image -->
+                <div class="content mt-4">
+                    <h3>UDR 3D Printed Case</h3>
+                    <p>This started with a case found on <a href="https://www.thingiverse.com/thing:4811381UDR">Thingiverse.</a></p>               
+                    <p>From there I remixed the design and added a shroud on the side of the case to allow for the Pi to sit in. I made it close enough to use a short ethernet cable and made slots in the design to allow for more airflow for the Pi.</p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+<section class="link">
+    <div class="container text-left text-sm-center">
+    <p>Link: <a href="https://pi-hole.net/">pi-hole.net</a></p>
+    </div>
+    </section>
+
+<hr class="mx-auto border-default" style="width:90px">
+
+
+
+
+<script src="C:\Users\Mason\OneDrive\Documents\Website\JS\1js.js"></script>
+<script src="C:\Users\Mason\OneDrive\Documents\Website\JS\2js.js"></script>
+<script src="C:\Users\Mason\OneDrive\Documents\Website\JS\3js.js"></script>
+<script src="C:\Users\Mason\OneDrive\Documents\Website\JS\4js.js"></script>
+<script src="C:\Users\Mason\OneDrive\Documents\Website\JS\5js.js"></script>
+<script src="C:\Users\Mason\OneDrive\Documents\Website\JS\6js.js"></script>
+
+<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></body></html>
